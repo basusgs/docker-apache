@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:centos6
 MAINTAINER github.com/blindly
 
 # Install HTTPD
