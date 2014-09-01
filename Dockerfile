@@ -31,4 +31,4 @@ ADD php.conf /etc/httpd/conf.d/php.conf
 #EXPOSE 80
 #EXPOSE 443
 
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd.itk", "-D", "FOREGROUND"]
