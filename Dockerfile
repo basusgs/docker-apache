@@ -2,7 +2,7 @@ FROM centos:centos6
 MAINTAINER github.com/blindly
 
 # Install HTTPD
-RUN yum install httpd mod_ssl -y
+RUN yum install httpd -y
 
 # Install repo
 RUN rpm -Uvh http://mirror.webtatic.com/yum/el6/latest.rpm
@@ -28,7 +28,7 @@ ADD httpd /etc/sysconfig/httpd
 # Add PHP.conf
 ADD php.conf /etc/httpd/conf.d/php.conf
 
-EXPOSE 80
-EXPOSE 443
+#EXPOSE 80
+#EXPOSE 443
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
