@@ -13,6 +13,9 @@ RUN yum install mbstring php54w php54w-mysql php54w-mbstring -y
 # Install Mcrypt
 RUN yum install mcrypt php54w-mcrypt -y
 
+# Install GD, XML
+RUN yum install php54w-gd php54w-xml -y
+
 # Install EPEL
 RUN rpm -i http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
